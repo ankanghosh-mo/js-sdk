@@ -6,7 +6,9 @@
   "scripts": {
     "dev": "vite",
     "build": "vite build",
-    "preview": "vite preview --port 5181 --strictPort"
+    "preview": "vite preview --port 5181 --strictPort",
+    "test:shots": "node tests/sdk-console-shots.mjs",
+    "test:flow": "node tests/sdk-console-flow.mjs"
   },
   "dependencies": {
     "react": "18.3.1",
@@ -14,6 +16,7 @@
   },
   "devDependencies": {
     "@vitejs/plugin-react": "4.3.4",
+    "puppeteer-core": "23.11.1",
     "vite": "5.4.11"
   }
 }
