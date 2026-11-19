@@ -16,6 +16,18 @@ npm run dev
 
 Open http://localhost:5181.
 
+## Run with Docker
+
+No Node.js needed, only Docker:
+
+```
+docker build -t ddm-sdk-console .
+docker run --rm -p 5181:80 ddm-sdk-console
+```
+
+Open http://localhost:5181. The image builds the site with Node 20, then serves it with nginx (`nginx.conf`); about 72 MB.
+Use another port if 5181 is taken: `-p 8080:80` → http://localhost:8080.
+
 ## Screens
 
 | Route | Canvas screen |
